@@ -1,0 +1,158 @@
+/*Navigation Styles */
+
+nav {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3.75rem 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 1.125rem;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.625rem;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #111;
+    padding: 1.125rem;
+    font-size: 1.5625rem;
+    letter-spacing: 0.625rem;
+}
+
+/* Body and heading styles */
+
+body {
+    background: rgb(30, 30, 40);
+}
+
+img[src="images/cm.png"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 1.25rem;
+    background-color: #CC6666;
+}
+
+/* Form styling */
+
+form {
+    max-width: 31.25rem;
+    margin: 3.125rem auto;
+}
+
+fieldset {
+    border: 0;
+}
+
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    border-radius: 0.3125rem;
+    line-height: 1.375rem;
+    background-color: transparent;
+    border: 0.125rem solid #CC6666;
+    transition: all 0.3s;
+    padding: 0.8125rem;
+    margin-bottom: 0.9375rem;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+label {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    background-color: transparent;
+    width: 100%;
+}
+
+.feedback-input:focus {
+    border: .155rem solid #CC4949;
+}
+
+textarea {
+    height: 9.375rem;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #CC6666;
+    border-radius: 0.3125rem;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    transition: all 0.3s;
+    margin-top: -0.25rem;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #CC4949;
+}
+
+/*Footer styles */
+
+footer {
+	display: table;
+	height: 20vh;
+}
+
+
+footer > p {
+	height: 20vh;
+	text-align: left;
+	display: table-cell;
+    vertical-align: bottom;
+	padding: 0.5rem;
+	color: #f7f7f7;
+}
+
+/*Responsive */
+
+@media screen and (max-device-width: 1024px) {
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+    nav {
+        display: block;
+    }
+    nav>ul {
+        padding: 0vw;
+    }
+    img[src="images/cm.png"] {
+        width: 80%;
+    }
+    footer p {
+		position: static;
+	}
+}

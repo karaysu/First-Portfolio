@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title>Contact Me</title>
+      <!--Links-->
+      <link href="css/contact.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <header role="banner">
+         <!-- Navigation Bar-->
+         <nav>
+            <ul>
+               <li>
+                  <a href="index.html">Home</a>
+               </li>
+               <li>
+                  <a href="projects.html">Projects</a>
+               </li>
+               <li>
+                  <a href="contact.html">Contact</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <main role="main">
+         <section>
+            <!--Heading Image-->
+            <img class="heading" src="images/cm.png" alt="contact me">
+            <!--Form Starts Here-->
+            <form action="mail.php" method="POST" class="form">
+               <fieldset>
+                  <input id="name" name="name" type="text" class="feedback-input" placeholder="Enter Your Name" required />
+               </fieldset>
+               <fieldset>
+                  <input id="email" name="email" type="text" class="feedback-input" placeholder="Email" required />
+               </fieldset>
+               <fieldset>
+                  <textarea id="message" name="message" class="feedback-input" placeholder="Message" required></textarea>
+               </fieldset>
+               <input type="submit" value="SUBMIT" />
+            </form>
+         </section>
+      </main>
+      <!--Footer-->
+      <footer role="contentinfo">
+         <p> Copyright &copy; 2018 Raman Deep Singh </p>
+      </footer>
+   </body>
+</html>
